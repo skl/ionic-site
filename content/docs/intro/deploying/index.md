@@ -9,7 +9,7 @@ header_sub_title: Getting Started with Ionic
 
 # Deploying to a Device
 
-<a class="improve-v2-docs" href='https://github.com/driftyco/ionic-site/edit/master/content/docs/intro/migration/index.md'>Improve this doc</a>
+<a class="improve-v2-docs" href='https://github.com/driftyco/ionic-site/edit/master/content/docs/intro/deploying/index.md'>Improve this doc</a>
 
 Testing your app in the browser with `ionic serve` or with an emulator is fast, easy and convenient when your app is in development, but eventually you're going to have to test on a device. Not only is it the only way to accurately test how your app will behave and perform, many [Ionic Native](http://ionicframework.com/docs//native/) plugins will only work when they are run on actual hardware.
 
@@ -25,7 +25,7 @@ Deploying to an Android device is a fairly straightforward process. If you have 
 
 ### Running Your App
 
-To run your app, all you have to do is enable USB debugging and Developer Mode on your Android device, then run `ionic run android --device` from the command line.
+To run your app, all you have to do is enable USB debugging and Developer Mode on your Android device, then run `ionic cordova run android --device` from the command line.
 
 This will produce a debug build of your app, both in terms of Android and Ionic's code
 
@@ -36,9 +36,9 @@ Enabling USB debugging and Developer Mode can vary between devices, but is easy 
 To run or build your app for production, run
 
 ```bash
-ionic run android --prod --release
+ionic cordova run android --prod --release
 # or
-ionic build android --prod --release
+ionic cordova build android --prod --release
 ```
 
 This will minify your app's code as Ionic's source and also remove any debugging capabilities from the APK. This is generally used when deploying an app to the Google Play Store.
